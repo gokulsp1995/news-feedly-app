@@ -1,0 +1,7 @@
+.news-card {
+  border: 1px solid red;
+  width: 400px;
+}
+.news-image > img {
+  width: 200px;
+}
