@@ -1,11 +1,12 @@
 
 import './App.css';
+import NewsSquare from './Components/NewsSquare';
 
 function App() {
   return (
     <div className="App">
-      
-    </div>
+      <NewsSquare title="This is the sample" />
+    </div> 
   );
 }
 
