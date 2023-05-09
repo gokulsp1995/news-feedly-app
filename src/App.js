@@ -1,8 +1,19 @@
 
 import './App.css';
+import React from 'react';
 import NewsSquare from './Components/NewsSquare';
 
 function App() {
+
+    const [newsData, setNewsData] = React.useState({})
+
+    console.log("rendered")
+  React.useEffect(() => {
+      fetch("https://inshorts.deta.dev/news?category=all")
+      .then(response => response.json())
+      .then(data => setNewsData(data))
+  }, [])
+
   return (
     <div className="App">
       <NewsSquare 
@@ -14,6 +25,7 @@ function App() {
           time="07:45 pm"
           readMoreUrl="https://news.ohsu.edu/2023/05/01/ohsu-dermatologists-detect-the-worlds-smallest-skin-cancer?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts "
           />
+      <p>{JSON.stringify(newsData,null,2)}</p>
     </div> 
   );
 }

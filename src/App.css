@@ -1,7 +1,48 @@
 .news-card {
-  border: 1px solid red;
-  width: 400px;
+  border: 2px solid red;
+  width: 40%;
 }
 .news-image > img {
   width: 200px;
+  margin: 5px;
+}
+.news-and-image {
+  display: flex;
+  border: 1px solid green;
+  justify-content: center;
+  align-items: center;
+}
+.news-title {
+  text-align: center;
+}
+.news-content {
+  text-align: justify;
+  margin: 10px;
+}
+.news-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.news-brand-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid blue;
+}
+.news-links {
+  margin: 10px;
+}
+.news-links > a {
+  color: #2d2d2d;
+  font-weight: 700;
+}
+.news-author {
+  font-size: 18px;
+  color: gray;
+  font-weight: 100;
+}
+.news-brand-time > p {
+  margin: 10px;
 }
