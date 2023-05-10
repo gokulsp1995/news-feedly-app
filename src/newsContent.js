@@ -1,0 +1,270 @@
+export const newsContent = {
+    "category": "all",
+    "data": [
+      {
+        "author": "Daisy Mowke",
+        "content": "Filmmaker Vivek Agnihotri said he has led a \"miserable\" life over the past year. \"Some politicians, journalists and so-called communal fact-checkers have made my life difficult. They are trying to silence me,\" he stated. \"Some communal fact checkers circulated my daughter's picture after lifting it from her Instagram profile, which is a shameless act,\" Agnihotri added.",
+        "date": "09 May 2023,Tuesday",
+        "id": "a9bbe3fb03c44aac8b50c3472edb1a55",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683649632173_791.jpg?",
+        "readMoreUrl": "https://www.hindustantimes.com/india-news/vivek-agnihotri-legal-notice-mamata-banerjee-kashmir-files-bjp-kerala-story-101683635421174-amp.html?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+        "time": "10:02 pm",
+        "title": "My life has become miserable, my daughter's picture was circulated: Vivek Agnihotri",
+        "url": "https://www.inshorts.com/en/news/my-life-has-become-miserable-my-daughters-picture-was-circulated-vivek-agnihotri-1683649972586"
+      },
+      {
+        "author": "Daisy Mowke",
+        "content": "Rakhi Sawant's brother has been arrested in a cheque bouncing case. A report said that a complaint was filed by a businessman in 2020. Rakesh was arrested three years back, however, he was later granted bail. The court had granted bail on the condition that he'll return the money. Rakesh failed to do so and he was once again arrested.\n\n\n\n",
+        "date": "09 May 2023,Tuesday",
+        "id": "12e91dc4c1f2414aba9a4035d6fa06d6",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683648932638_75.jpg?",
+        "readMoreUrl": "https://www.freepressjournal.in/amp/entertainment/bollywood/rakhi-sawants-brother-rakesh-arrested-in-cheque-bouncing-case?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+        "time": "09:56 pm",
+        "title": "Rakhi Sawant's brother Rakesh arrested in cheque bouncing case",
+        "url": "https://www.inshorts.com/en/news/rakhi-sawants-brother-rakesh-arrested-in-cheque-bouncing-case-1683649566251"
+      },
+      {
+        "author": "Shreyasi Banerjee",
+        "content": "Union Minister Smriti Irani, after watching 'The Kerala Story' on Tuesday, said, \"Every political party that stands in opposition of this film, stands with terrorist organisations.\" Irani claimed the film depicts the entrapment of forcible conversion of young women. \"Those political organisations that disallow citizens of our country are standing in support of such terror methods,\" she added.",
+        "date": "09 May 2023,Tuesday",
+        "id": "4f032e6bc1e84d72899acbd9e2aa4420",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683646539462_301.jpg?",
+        "readMoreUrl": "https://news.abplive.com/news/india/every-political-party-that-opposes-the-kerala-story-stands-with-terror-organisations-smriti-irani-1600997/amp?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+        "time": "09:35 pm",
+        "title": "Parties opposing The Kerala Story stand with terror outfits: Irani",
+        "url": "https://www.inshorts.com/en/news/parties-opposing-the-kerala-story-stand-with-terror-outfits-irani-1683648338573"
+      },
+      {
+        "author": "Pragya Swastik",
+        "content": "A luxury wristwatch worn by China's last emperor, Aisin-Gioro Puyi, is expected to fetch over $3 million (around ₹25 crore) when it goes on sale in Hong Kong this month. Puyi's Patek Philippe Reference 96 Quantieme Lune wristwatch is one of only eight such timepieces known to exist. Some of the internal mechanisms of the wristwatch date back to 1929.",
+        "date": "09 May 2023,Tuesday",
+        "id": "3d7f34308edb4824827f1d3eb614f42e",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683641830409_242.jpg?",
+        "readMoreUrl": "https://www.phillips.com/detail/patek-philippe/HK080623/3?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+        "time": "09:45 pm",
+        "title": "Pics show China's last emperor's watch expected to fetch ₹25 crore",
+        "url": "https://www.inshorts.com/en/news/pics-show-chinas-last-emperors-watch-expected-to-fetch-₹25-crore-1683648957625"
+      },
+      {
+        "author": "Anmol Sharma",
+        "content": "After Sachin Tendulkar and MS Dhoni, Virat Kohli's picture showing him walking down the stairs at Wankhede Stadium has gone viral. Reacting to it, a fan wrote, \"The icons of Indian cricket.\" The picture showing Sachin Tendulkar walking down the stairs for his last Test innings had won 2013 MCC-Wisden Photo of the Year award.",
+        "date": "09 May 2023,Tuesday",
+        "id": "96ab8da3e77d49b6ae82e1fca8820b16",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683648331304_251.jpg?",
+        "readMoreUrl": "https://www.crictracker.com/social-tracker-cricket/iconic-picture-featuring-sachin-tendulkar-ms-dhoni-virat-kohli-from-wankhede-stairs-grabs-attention/?amp=1&utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+        "time": "09:51 pm",
+        "title": "After Sachin and Dhoni, Kohli's pic from Wankhede stairs goes viral",
+        "url": "https://www.inshorts.com/en/news/after-sachin-and-dhoni-kohlis-pic-from-wankhede-stairs-goes-viral-1683649318557"
+      },
+      {
+        "author": "Nakul Ahuja",
+        "content": "A victim of Manipur violence has revealed that people \"ran for their lives\" after miscreants started burning their homes. In a video, the man revealed that miscreants also fired at them. Another victim said that the miscreants broke glass, tiles and burned curtains of their place of worship. At least 15,000 people have reportedly been shifted to safer places. ",
+        "date": "09 May 2023,Tuesday",
+        "id": "b3f96cb600254ec9b6ca23fcffa91da2",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683639753270_251.jpg?",
+        "readMoreUrl": "https://www.youtube.com/watch?utm_campaign=fullarticle&v=mBTbvN42R_I&utm_medium=referral&utm_source=inshorts ",
+        "time": "10:03 pm",
+        "title": "Ran for our lives after home got burnt: Manipur violence victim",
+        "url": "https://www.inshorts.com/en/news/ran-for-our-lives-after-home-got-burnt-manipur-violence-victim-1683650039000"
+      },
+      {
+        "author": "Nakul Ahuja",
+        "content": "Section 144 has been imposed in Islamabad after several workers of the Pakistan Tehreek-e-Insaf party staged protests and created a riot-like situation, following the arrest of former PM Imran Khan. He shared a video before his arrest saying, \"I'm ready to die than live under these duffers...There's no case on me.\"",
+        "date": "09 May 2023,Tuesday",
+        "id": "f13021e3f850412ba2d7e27c5792863f",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683645508704_550.jpg?",
+        "readMoreUrl": "https://www.freepressjournal.in/amp/world/imran-khan-arrested-section-144-imposed-in-islamabad-as-pti-stages-nationwide-protests-watch?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+        "time": "09:40 pm",
+        "title": "Section 144 imposed in Islamabad following Imran Khan's arrest",
+        "url": "https://www.inshorts.com/en/news/section-144-imposed-in-islamabad-following-imran-khans-arrest-1683648634733"
+      },
+      {
+        "author": "Nakul Ahuja",
+        "content": "During a recent interview, Nawazuddin Siddiqui revealed he tried to become a monk two-three times, but he failed. \"Then I became careless, and someone introduced me to theatre,\" he said. While talking about his separation from his estranged wife, Nawazuddin said, \"I want people to spread positivity, and I also try to maintain positivity everywhere.\"",
+        "date": "09 May 2023,Tuesday",
+        "id": "94d5082ead114af5a1b2209ed73e71fd",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683648030292_306.jpg?",
+        "readMoreUrl": "https://www.pinkvilla.com/entertainment/exclusives/exclusive-video-nawazuddin-siddiqui-on-controversy-with-wife-aaliya-says-ive-no-complaints-with-anyone-1220393?amp=&utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+        "time": "10:10 pm",
+        "title": "Tried becoming a monk 2-3 times, but I became careless: Nawazuddin",
+        "url": "https://www.inshorts.com/en/news/tried-becoming-a-monk-23-times-but-i-became-careless-nawazuddin-1683650409078"
+      },
+      {
+        "author": "Arnab Mukherji ",
+        "content": "GT assistant coach Naeem Amin said GT head coach Ashish Nehra is like an \"army colonel\" who \"marches the troops\" and ensures that things are done, adding that GT captain Hardik Pandya is a perfectionist. \"Hardik is very meticulous,\" stated Amin. \"Hardik has some seriously good night outfits,\" he said. \"Nehra's the first man on...pitch and...last to leave,\" added Amin.",
+        "date": "09 May 2023,Tuesday",
+        "id": "c4549063ad564e1cb700086482f27a01",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683647726771_822.jpg?",
+        "readMoreUrl": "https://www.youtube.com/watch?utm_campaign=fullarticle&v=p1xXLAasf3w&utm_medium=referral&utm_source=inshorts ",
+        "time": "10:00 pm",
+        "title": "Nehra is like colonel, Hardik a perfectionist: GT assistant coach",
+        "url": "https://www.inshorts.com/en/news/nehra-is-like-colonel-hardik-a-perfectionist-gt-assistant-coach-1683649814590"
+      },
+      {
+        "author": "Aditya Nair",
+        "content": "Mumbai Indians all-rounder Cameron Green said he's practising to \"hit a bit straighter\" after \"playing across the line\" in earlier matches. \"The learning that I've had probably from the IPL is to play...and just how fun it is competing against the best in the world,\" said Green. The Australian has scored 272 runs and taken five wickets in IPL 2023.",
+        "date": "09 May 2023,Tuesday",
+        "id": "a2e67511ad454077b62da69cddb88493",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683644438566_968.jpg?",
+        "readMoreUrl": "https://youtu.be/EyUj_7vdMh8?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+        "time": "09:41 pm",
+        "title": "Practising straighter shots after playing across the line: Green",
+        "url": "https://www.inshorts.com/en/news/practising-straighter-shots-after-playing-across-the-line-green-1683648662937"
+      },
+      {
+        "author": "Aditya Nair",
+        "content": "Shardul Thakur said he isn't injured and isn't bowling for KKR in IPL 2023 because of the surplus of all-rounders in the team. \"It also depends on the situation of the game, if the captain feels the need to bowl me or not,\" he said. Thakur added that he hopes to \"get the job done\" when asked to bowl. ",
+        "date": "09 May 2023,Tuesday",
+        "id": "d5e8513e222d4404a79cdda907627a49",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683647978214_659.jpg?",
+        "readMoreUrl": "https://www.espncricinfo.com/story/ipl-2023-kkr-allrounder-shardul-thakur-is-back-to-bowling-and-has-no-injury-concerns-ahead-of-wtc-final-1374519?utm_campaign=fullarticle&utm_medium=referral&platform=amp&utm_source=inshorts ",
+        "time": "09:55 pm",
+        "title": "Not bowling because KKR has a surplus of all-rounders: Shardul",
+        "url": "https://www.inshorts.com/en/news/not-bowling-because-kkr-has-a-surplus-of-allrounders-shardul-1683649537467"
+      },
+      {
+        "author": "Aditya Nair",
+        "content": "Paris Saint-Germain are reportedly looking to sell Brazilian forward Neymar at the end of this season, with Manchester United, Juventus, and Newcastle United interested in acquiring his services. PSG are said to have no faith in the 31-year-old with his current market value being pegged at €70 million. Neymar joined PSG in 2017 for a world record €222 million fee.",
+        "date": "09 May 2023,Tuesday",
+        "id": "9d7ea041773e46d983c38a6abf8af8b3",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683642823124_236.jpg?",
+        "readMoreUrl": "https://www.sportskeeda.com/amp/football/psg-superstar-neymar-wanted-manchester-united-2-clubs-summer-reports?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+        "time": "09:34 pm",
+        "title": "Man Utd looking to get Neymar after PSG's loss of faith: Report",
+        "url": "https://www.inshorts.com/en/news/man-utd-looking-to-get-neymar-after-psgs-loss-of-faith-report-1683648278447"
+      },
+      {
+        "author": "Aditya Nair",
+        "content": "French sprinter Halba Diouf feels she is being marginalised and hounded after World Athletics (WA) banned transgender women from elite female competitions like next year's Paris Olympics. \"Transgender women have always been allowed to compete if their testosterone levels were below a certain threshold,\" said Diouf. The WA had said that they \"need to protect the female category\". ",
+        "date": "09 May 2023,Tuesday",
+        "id": "b5dab197e521490ab02882e70aa37fc4",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683647045601_306.jpg?",
+        "readMoreUrl": null,
+        "time": "09:51 pm",
+        "title": "We're being hounded: French transgender sprinter on Olympics ban",
+        "url": "https://www.inshorts.com/en/news/were-being-hounded-french-transgender-sprinter-on-olympics-ban-1683649262435"
+      },
+      {
+        "author": "Mansi Agarwal",
+        "content": "Google's DeepMind trained a couple of miniature humanoid robots to play football using AI. Researchers initially trained virtual versions of robots before transferring the technology to real ones. The robots \"exhibit robust and dynamic movement skills\" such as rapid fall recovery and kicking, DeepMind said, adding that they've also \"developed a basic strategic understanding of the game\".",
+        "date": "09 May 2023,Tuesday",
+        "id": "2dbdd79d78f34d6bb4da26cdf185d9c4",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683648511773_820.jpg?",
+        "readMoreUrl": "https://www.youtube.com/watch?utm_campaign=fullarticle&v=KRm17Pc2nZc&utm_medium=referral&utm_source=inshorts ",
+        "time": "10:13 pm",
+        "title": "Robots use AI developed by Google's DeepMind to play football",
+        "url": "https://www.inshorts.com/en/news/robots-use-ai-developed-by-googles-deepmind-to-play-football-1683650628320"
+      },
+      {
+        "author": "Ashley Paul",
+        "content": "Artificial intelligence (AI) won't replace people because it lacks emotion, said Apple Co-founder Steve Wozniak. AI will, however, make bad actors even more convincing because programmes like ChatGPT can create text which \"sounds so intelligent\", he added. AI could make scams and misinformation harder to spot, he said, adding, \"A human really has to take responsibility for what AI generates.\"",
+        "date": "09 May 2023,Tuesday",
+        "id": "312e3be9354e488d8ba015ac9247a92b",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683644053691_808.jpg?",
+        "readMoreUrl": "https://www.youtube.com/watch?utm_campaign=fullarticle&v=OKb01wslTTk&utm_medium=referral&utm_source=inshorts ",
+        "time": "09:21 pm",
+        "title": "AI won't replace people as it lacks emotion: Apple Co-founder",
+        "url": "https://www.inshorts.com/en/news/ai-wont-replace-people-as-it-lacks-emotion-apple-cofounder-1683647468881"
+      },
+      {
+        "author": "Apoorva Shankar",
+        "content": "The Mumbai zonal unit of Narcotics Control Bureau (NCB) on Tuesday said it intercepted an alleged international gold smuggler at Nagpur airport and seized gold worth around ₹1.80 crore. \"Seven small white packets were found to be...stitched along the inner side of his pants, semi-liquid paste of golden colour was recovered from each packet,\" an NCB official said.",
+        "date": "09 May 2023,Tuesday",
+        "id": "8f5ae87485614f01bd8eeece9f8f5be8",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683640776388_540.jpg?",
+        "readMoreUrl": "https://www.mid-day.com/amp/mumbai/mumbai-crime-news/article/maharashtra-drugs-agency-nabs-smuggler-with-rs-1-80-crore-worth-gold-at-nagpur-airport-23285557?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+        "time": "09:27 pm",
+        "title": "Gold worth ₹1.80 cr hidden inside pants seized at Nagpur airport",
+        "url": "https://www.inshorts.com/en/news/gold-worth-₹180-cr-hidden-inside-pants-seized-at-nagpur-airport-1683647841116"
+      },
+      {
+        "author": "Saurabh Sinha",
+        "content": "A 26-year-old man died after his coworker allegedly used a compressor machine to blow air inside his rectum. \"[The accused] claimed that they used to blow compressed cold air at each other due to the hot weather. But this time he tried to blow it into [victim's] rectum and the latter fell unconscious,\" said police.",
+        "date": "09 May 2023,Tuesday",
+        "id": "8bfa60afa4384daea01d3daeb855a192",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683645320308_965.jpg?",
+        "readMoreUrl": "https://www.latestly.com/agency-news/latest-news-man-dies-after-co-worker-blows-compressed-air-inside-rectum-in-kerala-5114899.html/amp?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+        "time": "09:32 pm",
+        "title": "Man dies after coworker blows air into his rectum in Kerala",
+        "url": "https://www.inshorts.com/en/news/man-dies-after-coworker-blows-air-into-his-rectum-in-kerala-1683648146762"
+      },
+      {
+        "author": "Disha Jana",
+        "content": "Serbian Education Minister Branko Ružić resigned on Sunday after two school shootings last week. \"As a responsible and well-raised man, as a professional in fulfilling all public duties so far, and as a parent and as a citizen of Serbia, I made a rational decision to resign,\" Ruzic said. As many as 17 people were killed in the shootings.",
+        "date": "09 May 2023,Tuesday",
+        "id": "875b04bd56ac4333b17403059d335a48",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683649267538_264.jpg?",
+        "readMoreUrl": "https://www.timesnownews.com/world/serbian-education-minister-branko-ruzic-resigns-after-mass-shootings-article-100069223/amp?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+        "time": "10:11 pm",
+        "title": "Serbian Education Minister Ružić resigns after 2 school shootings",
+        "url": "https://www.inshorts.com/en/news/serbian-education-minister-ružić-resigns-after-2-school-shootings-1683650496384"
+      },
+      {
+        "author": "Disha Jana",
+        "content": "Pakistan PM Shehbaz Sharif said ex-PM Imran Khan's politics is defined by \"blatant lies\" and attacks on institutions on Tuesday. \"You refused the offer of cooperation from the federal government & boycotted the legal proceedings. You were never interested in finding the truth,\" Sharif said in a tweet directed towards Khan following the latter's arrest in a corruption case.",
+        "date": "09 May 2023,Tuesday",
+        "id": "8d27b5f85d024c3a82e3b431e46debc5",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683645511447_723.jpg?",
+        "readMoreUrl": "https://aninews.in/news/world/asia/imran-khans-politics-is-defined-by-blatant-lies-says-pak-pm-shehbaz-after-pti-leaders-arrest20230509193106/?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+        "time": "09:22 pm",
+        "title": "Imran's politics filled with blatant lies: Pak PM after his arrest",
+        "url": "https://www.inshorts.com/en/news/imrans-politics-filled-with-blatant-lies-pak-pm-after-his-arrest-1683647571162"
+      },
+      {
+        "author": "Ashley Paul",
+        "content": "Aviation regulator DGCA has received new requests from aircraft lessors to de-register nine more aircraft of cash-strapped airline Go First, taking the total aircraft requested for de-registration to 45. Requests were also made on May 8 and May 4 for aircraft de-registration. DGCA had also issued show-cause notice to Go First over its failure to continue operations in safe manner.",
+        "date": "09 May 2023,Tuesday",
+        "id": "108e728cd5ce491d9bd90d0da69bcbea",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683646555622_520.jpg?",
+        "readMoreUrl": "https://www.cnbctv18.com/aviation/dgca-gets-new-requests-to-de-register-9-go-first-planes-takes-total-to-45-aircraft-16611521.htm/amp?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+        "time": "09:42 pm",
+        "title": "DGCA gets new requests to de-register 9 more Go First planes",
+        "url": "https://www.inshorts.com/en/news/dgca-gets-new-requests-to-deregister-9-more-go-first-planes-1683648747846"
+      },
+      {
+        "author": "Srishty Choudhury",
+        "content": "Senate Judiciary Committee has asked Texas billionaire Harlan Crow to detail gifts he or his companies have made to US Supreme Court Justice Clarence Thomas. \"Recent investigative reporting has identified...instances in which you or entities you own or control have made payments,\n purchased real estate...provided gifts, travel...Justice Clarence Thomas and members of his family,\" read the letter.",
+        "date": "09 May 2023,Tuesday",
+        "id": "c7c421872c5c42e89d273e27db707193",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683646740204_63.jpg?",
+        "readMoreUrl": "https://www.reuters.com/legal/government/senators-ask-billionaire-list-gifts-supreme-court-justice-thomas-2023-05-09/?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+        "time": "10:15 pm",
+        "title": "US Senators ask Texas billionaire for list of gifts to SC Justice",
+        "url": "https://www.inshorts.com/en/news/us-senators-ask-texas-billionaire-for-list-of-gifts-to-sc-justice-1683650726643"
+      },
+      {
+        "author": "Ashley Paul",
+        "content": "Civil Aviation Ministry has pushed back against price caps on flight tickets, citing rising losses of airlines, CNBC TV18 reported. Government cannot do price control at this stage given the aviation sector's health, the ministry reportedly said. Meanwhile, a parliamentary committee has asked the ministry and aviation regulator DGCA to explain rules around ticket pricing.",
+        "date": "09 May 2023,Tuesday",
+        "id": "5a5e086b7e3a4a3aacd4e3745dc19481",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683642814078_409.jpg?",
+        "readMoreUrl": "https://www.cnbctv18.com/aviation/civil-aviation-ministry-cautions-against-air-ticket-price-caps-amid-airlines-losses-16610141.htm/amp?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+        "time": "09:30 pm",
+        "title": "Civil Aviation Ministry opposes flight ticket price cap: Report",
+        "url": "https://www.inshorts.com/en/news/civil-aviation-ministry-opposes-flight-ticket-price-cap-report-1683648032287"
+      },
+      {
+        "author": "Aishwarya Awasthi",
+        "content": "Foreign institutional investors (FIIs) raised their stakes in India's smallcap firms to their highest level in at least five years, Prime Database data showed. As per Moneycontrol, an analysis of 76 stocks of the Nifty SmallCap100 Index showed the stake of foreign institutional investors rising to 7.93% in the March quarter, the highest since the quarter ended June 2018.",
+        "date": "09 May 2023,Tuesday",
+        "id": "eec82ba8859f44b3878bd26e8b35900f",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683646632216_248.jpg?",
+        "readMoreUrl": "https://www.moneycontrol.com/news/business/markets/fiis-equity-holdings-in-smallcap-firms-hit-a-20-quarter-high-as-promoters-reduce-stakes-10551541.html/amp?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+        "time": "10:05 pm",
+        "title": "FIIs' equity holdings in smallcap firms hit five-year high: Report",
+        "url": "https://www.inshorts.com/en/news/fiis-equity-holdings-in-smallcap-firms-hit-fiveyear-high-report-1683650101997"
+      },
+      {
+        "author": "Srishty Choudhury",
+        "content": "The Reserve Bank of India (RBI) said on Tuesday that fees and charges payable in India on forex prepaid cards, store value cards and travel cards must be denominated and settled in rupee. The use of such cards is limited to permissible current account transactions and subject to the prescribed limits under the Foreign Exchange Management Rules.",
+        "date": "09 May 2023,Tuesday",
+        "id": "3c1c1f47119f4209a0e894d8bc5fb0a6",
+        "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/9_tue/img_1683648993297_795.jpg?",
+        "readMoreUrl": "https://www.moneycontrol.com/news/business/settle-fee-charges-on-forex-prepaid-cards-in-rupee-says-rbi-10555751.html?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+        "time": "10:19 pm",
+        "title": "Settle fee, charges on forex prepaid cards in rupee: RBI",
+        "url": "https://www.inshorts.com/en/news/settle-fee-charges-on-forex-prepaid-cards-in-rupee-rbi-1683650950274"
+      }
+    ],
+    "success": true
+  }
