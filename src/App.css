@@ -13,12 +13,18 @@ body {
   width: 500px;
   color: snow;
   background-color: #2d2d2d;
+  box-shadow: 10px 10px 10px gray;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 10px ;
-
+}
+.news-card:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  color: goldenrod;
+  /* font-size: 16px; */
 }
 .text-area{
   display: flex;
@@ -39,7 +45,7 @@ body {
 }
 .news-title {
   text-align: center;
-  color: #f72208;
+  /* color: ; */
 }
 .news-content {
   text-align: justify;
