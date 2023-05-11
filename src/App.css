@@ -1,16 +1,16 @@
 body {
-  background-color: black;
+  background-color: snow;
 }
 
 .news-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap:20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap:10px;
 }
 
 .news-card {
   border: 1px solid rgb(41, 34, 34);
-  /* width: ; */
+  width: 500px;
   color: snow;
   background-color: #2d2d2d;
   border-radius: 10px;
@@ -68,6 +68,7 @@ body {
   color: goldenrod;
   font-weight: 700;
   text-align: center;
+  margin: 5px;
 }
 .news-author {
   font-size: 18px;
@@ -88,5 +89,8 @@ body {
   .news-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
   }
 }
