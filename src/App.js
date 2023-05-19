@@ -1,82 +1,133 @@
-
 import './App.css';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import NewsSquare from './Components/NewsSquare';
-import { newsContent } from "./newsContent"
+import { newsContent } from "./newsContent";
 
 function App() {
-
-    const [newsData, setNewsData] = React.useState([{
-       
-      author
-      : 
-      "Pragya Swastik",
-      content
-      : 
-      "Researchers have named a new group of butterflies with bright orange hindwings and dark eyespots 'Saurona' after the villain 'Sauron' from the 'Lord of the Rings'. Sauron was the evil lord of Mordor. 'The Eye of Sauron' from the Lord of the Rings was famously depicted on screen as a fiery orange eye peering over the landscape of Middle Earth.",
-      date
-      : 
-      "07 May 2023,Sunday",
-      id
-      : 
-      "f2a94fee2fa1429594885abafd45832a",
-      imageUrl
-      : 
-      "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/05_may/7_sun/img_1683457674199_66.jpg?",
-      readMoreUrl
-      : 
-      "https://www.nhm.ac.uk/discover/news/2023/may/new-group-butterflies-named-after-lord-of-the-rings-villain-sauron.html?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
-      time
-      :   
-      "05:47 pm",
-      title
-      : 
-      "Rare butterflies named after 'Lord of the Rings' villain for how they look",
-      url
-      : 
-      "https://www.inshorts.com/en/news/rare-butterflies-named-after-lord-of-the-rings-villain-for-how-they-lo"
-}])
- 
-    // const {data: newsData} = newsContent;
-  //   console.log("rendered")
-  // React.useEffect(() => {
-  //     fetch("https://inshorts.deta.dev/news?category=all")
-  //     .then(response => response.json())
-  //     .then(data => setNewsData(data))
-  // }, [])
+  const [newsData, setNewsData] = useState([]);
 
   useEffect(() => {
-      const fetchNews = async() => {
-        fetch("https://inshorts.deta.dev/news?category=science")
-        .then( response => response.json())
-        .then(data => setNewsData(data))
-        .catch((error) => console.error('Error fetching news:', error));
-        console.log(newsData)
-        console.log(newsData.data[0])
-        console.log(newsData.data.map(newsItem => newsItem.id))
-      }
-      fetchNews();
-    
-  }, []);
+    const fetchNews = async () => {
+      try {
+        const response = await fetch("https://inshorts.deta.dev/news?category=science");
 
+        if (!response.ok) {
+          throw new Error("Failed to fetch news");
+        }
+
+        const data = await response.json();
+        setNewsData(data);
+
+        console.log(data);
+        console.log(data[0]);
+        console.log(data.map(newsItem => newsItem.id));
+      } catch (error) {
+        console.error("Error fetching news:", error);
+      }
+    };
+
+    fetchNews();
+  }, []); 
+    console.log(newsData)
   return (
-    <div className='App'>
+    
+    <div className='App'> 
+      console.log(newsData)
       <div className="news-container">
         <div>Hi</div>
-         
-        {["hi","hello","welcome"].map((greeting, index) => {
-            return <div>{greeting}</div> 
+        {["hi", "hello", "welcome"].map((greeting, index) => {
+          return <div key={index}>{greeting}</div>;
         })}
-             { newsData.data.map({val => 
-                  return <p>{val.author}<p/>
-             }) }
-
-      </div> 
+        {/* {newsData.map((val) => {
+          return <p key={val.id}>{val.author}</p>;
+        })} */}
+        
+        {newsData.data && Array.isArray(newsData.data) && newsData.data.length > 0 ? (
+          newsData.data.map((news) =>(
+            <NewsSquare 
+            key={news.id}
+            title={news.title}
+            imageUrl={news.imageUrl}
+            author={news.author} 
+            content={news.content}
+            date={news.date}
+            time={news.time}
+            readMoreUrl={news.readMoreUrl}
+            />
+        ) )
+      
+      ) : (
+        <h1>No news available</h1>
+      )
+    }
+      </div>
     </div>
   );
 }
 
 export default App;
+
+// import './App.css';
+// import React, { useEffect , useState} from 'react';
+// import NewsSquare from './Components/NewsSquare';
+// import { newsContent } from "./newsContent"
+
+// function App() {
+
+//     const [newsData, setNewsData] = React.useState([]);
+ 
+//     // const {data: newsData} = newsContent;
+//   //   console.log("rendered")
+//   // React.useEffect(() => {
+//   //     fetch("https://inshorts.deta.dev/news?category=all")
+//   //     .then(response => response.json())
+//   //     .then(data => setNewsData(data))
+//   // }, [])
+
+//   useEffect(() => {
+//       const fetchNews = async() => {
+//         try{
+//           const response = await fetch("https://inshorts.deta.dev/news?category=science")
+
+//           if(!response.ok) {
+//               throw new Error("Failed to fetch news")
+//           }
+//           const data = await response.json();
+//           setNewsData(data)
+
+//           // .then( response => response.json())
+//           // .then(data => setNewsData(data))
+//           // .catch((error) => console.error('Error fetching news:', error));
+//           console.log(data)
+//           console.log(data[0])
+//           console.log(data.map(newsItem => newsItem.id))
+//       } 
+//         catch(error) {
+//             console.error("Error fetching news:", error)
+//         }
+//       };
+//       fetchNews();
+    
+//   }, []);
+
+//   return (
+//     <div className='App'>
+//       <div className="news-container">
+//         <div>Hi</div>
+         
+//         {["hi","hello","welcome"].map((greeting, index) => {
+//             return <div>{greeting}</div> 
+//         })}
+//              { newsData.map((val) => {
+//                   return <p key={val.id}>{val.author}</p>
+//              }) }
+
+//       </div> 
+//     </div>
+//   );
+// }
+
+// export default App;
 
 
 
