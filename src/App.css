@@ -10,7 +10,7 @@ body {
 
 .news-card {
   border: 1px solid rgb(41, 34, 34);
-  width: 500px;
+  max-width: 650px;
   color: snow;
   background-color: #2d2d2d;
   box-shadow: 10px 10px 10px gray;

@@ -4,7 +4,7 @@ import NewsSquare from './Components/NewsSquare';
 import { newsContent } from "./newsContent";
 
 function App() {
-  const [newsData, setNewsData] = useState([]);
+  const [newsData, setNewsData] = useState({});
 
   useEffect(() => {
     const fetchNews = async () => {
@@ -32,11 +32,11 @@ function App() {
   return (
     
     <div className='App'> 
-      console.log(newsData)
       <div className="news-container">
-        <div>Hi</div>
+        <div>Hi Man</div>
         {["hi", "hello", "welcome"].map((greeting, index) => {
-          return <div key={index}>{greeting}</div>;
+          return <div
+           >{greeting}</div>;
         })}
         {/* {newsData.map((val) => {
           return <p key={val.id}>{val.author}</p>;
@@ -45,19 +45,22 @@ function App() {
         {newsData.data && Array.isArray(newsData.data) && newsData.data.length > 0 ? (
           newsData.data.map((news) =>(
             <NewsSquare 
-            key={news.id}
-            title={news.title}
-            imageUrl={news.imageUrl}
-            author={news.author} 
-            content={news.content}
-            date={news.date}
-            time={news.time}
-            readMoreUrl={news.readMoreUrl}
+              key={news.id}
+              title={news.title}
+              imageUrl={news.imageUrl}
+              author={news.author} 
+              content={news.content}
+              date={news.date}
+              time={news.time}
+              readMoreUrl={news.readMoreUrl}
             />
         ) )
       
       ) : (
-        <h1>No news available</h1>
+        <>
+          <img src='my-loader-image.svg' width="450px"/>
+          <h2>Please wait while the webpage loads...</h2>
+       </>
       )
     }
       </div>
