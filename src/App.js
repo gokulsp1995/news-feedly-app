@@ -5,33 +5,41 @@ import { newsContent } from "./newsContent";
 
 function App() {
   const [newsData, setNewsData] = useState({});
+  const [searchNewsData, setSearchNewsData] = useState("");
 
   useEffect(() => {
     const fetchNews = async () => {
       try {
         const response = await fetch("https://inshorts.deta.dev/news?category=science");
-
         if (!response.ok) {
           throw new Error("Failed to fetch news");
         }
-
         const data = await response.json();
         setNewsData(data);
-
-        console.log(data);
-        console.log(data[0]);
-        console.log(data.map(newsItem => newsItem.id));
-      } catch (error) {
+      } 
+      catch (error) {
         console.error("Error fetching news:", error);
       }
     };
 
     fetchNews();
-  }, []); 
+  }, [searchNewsData]); 
     console.log(newsData)
+
+  const handleSearch = (event) => {
+      event.preventDefault();
+      setSearchNewsData(event.target.search.value)
+  }
+
   return (
     
     <div className='App'> 
+    <div className="search-container">
+        <form onSubmit={handleSearch}>
+          <input type="text" name="search" placeholder="Search news" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
       <div className="news-container">
         <div>Hi Man</div>
         {["hi", "hello", "welcome"].map((greeting, index) => {
