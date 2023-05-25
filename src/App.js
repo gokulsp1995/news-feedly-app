@@ -21,27 +21,29 @@ function App() {
       }
     };
     fetchNews();
-  }, [searchNewsData]); 
+  }, []); 
     // console.log(newsData)
 
   const handleSearch = (event) => {
         event.preventDefault();
-        console.log(event);
-        console.log(event.target)
-        console.log(event.target.search)
-        console.log(event.target.search.value)
-        setSearchNewsData(event.target.search.value)
+        // console.log(event);
+        // console.log(event.target)
+        // console.log(event.target.search)
+        // console.log(event.target.search.value)
+        const searchTerm = event.target.search.value
+      const result =[]
       for( let i=0; i < newsData.data.length; i++) {
-          console.log(newsData.data[i].title, newsData.data[i].title.includes(searchNewsData))
-          if (newsData.data[i].title.includes(searchNewsData)){
-              const result = newsData.data[i]
-              console.log(result);
+          // console.log(newsData.data[i].title, newsData.data[i].title.includes(searchNewsData))
+          if (newsData.data[i].title.includes(searchTerm)){
+              result.push(newsData.data[i])
             // setNewsData(result)
           }
       }
+      console.log("Result after filter",result);
+      setSearchNewsData(result);
+      console.log("This is the search state",searchNewsData)
   }
   return (
-    
     <div className='App'> 
     <div className="search-container">
         <form onSubmit={handleSearch}>
@@ -58,8 +60,22 @@ function App() {
         {/* {newsData.map((val) => {
           return <p key={val.id}>{val.author}</p>;
         })} */}
-        
-        {newsData.data && Array.isArray(newsData.data) && newsData.data.length > 0 ? (
+        {searchNewsData && Array.isArray(searchNewsData) && searchNewsData.length > 0 ? (
+          searchNewsData.map((news) =>(
+            <NewsSquare 
+              key={news.id}
+              title={news.title}
+              imageUrl={news.imageUrl}
+              author={news.author} 
+              content={news.content}
+              date={news.date}
+              time={news.time}
+              readMoreUrl={news.readMoreUrl}
+            />
+        ))
+        ):
+
+        newsData.data && Array.isArray(newsData.data) && newsData.data.length > 0 ? (
           newsData.data.map((news) =>(
             <NewsSquare 
               key={news.id}
@@ -71,8 +87,7 @@ function App() {
               time={news.time}
               readMoreUrl={news.readMoreUrl}
             />
-        ) )
-      
+        ))
       ) : (
         <>
           <img src='my-loader-image.svg' width="450px"/>
