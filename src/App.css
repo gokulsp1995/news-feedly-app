@@ -11,13 +11,29 @@ body {
   width: 300px;
   height: 24px;
 }
-
+.top-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.top-section > button {
+  background-color: #2d2d2d;
+  color: snow;
+  font-size: 16px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 5px;
+}
+.categoryButtons:focus{
+  background-color: snow;
+  color: #2d2d2d;
+}
 .search-container button {
   padding: 5px 10px;
   margin-left: 10px;
   font-size: 16px;
   cursor: pointer;
-  border: none;
+  /* border: none; */
   background-color: #2d2d2d;
   color: snow;
   font-weight: 700;
@@ -109,6 +125,42 @@ body {
 }
 .news-brand-time > p {
   margin: 8px;
+}
+
+
+.creator-info{
+  display: flex;
+  justify-content: space-between;
+
+}
+.creator-each{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+.creator-each > h3 {
+  margin-bottom: 0;
+}
+.creator-each > img {
+  border-radius: 50%;
+}
+.creator-each > p {
+  color: gray;
+}
+.creator-each > button {
+  background-color:#3B5998;
+  color: snow;
+  padding: 10px 10px;
+  width: 160px;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
