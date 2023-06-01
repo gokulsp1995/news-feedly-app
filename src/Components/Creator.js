@@ -27,16 +27,29 @@ const creatorData = [
 ]
 
 const Creator = () => {
+    const [followClicks, setFollowClicks] = React.useState({});
+
+    const handleFollowClick = (id) => {
+        setFollowClicks((prevState) => ({
+            ...prevState,
+            [id]: !prevState[id]
+        }))
+      };
     return (
-        <div className="creator-info">
-            {creatorData.map((person) => (
-                <div key={person.id} className="creator-each">
-                    <img src={person.imageUrl} width="150px"/> 
-                    <h3>{person.name}</h3>
-                    <p>{person.company}</p>
-                    <button>Follow</button>
-                </div>
-            ))}
+        <div className="creator-main">
+            <h2>Creators you should follow</h2>
+            <div className="creator-info">
+                {creatorData.map((person) => (
+                    <div key={person.id} className="creator-each">
+                        <img src={person.imageUrl} width="150px"/> 
+                        <h3>{person.name}</h3>
+                        <p>{person.company}</p>
+                        <button onClick={() => handleFollowClick(person.id)}>
+                            {followClicks[person.id] ? "Unfollow" : "Follow"}
+                        </button>
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }

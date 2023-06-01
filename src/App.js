@@ -26,15 +26,15 @@ function App() {
   //   fetchNews();
   // }, [currentCategory]); 
 
-  // useEffect(() => {
-  //   const fetchNews = () => {
-  //     fetch(`https://inshorts.deta.dev/news?category=${currentCategory}`)
-  //       .then(response => response.json())
-  //       .then(data => setNewsData(data))
-  //       .catch(error => console.error("Error fetching news:", error));
-  //   };
-  //   fetchNews();
-  // }, [currentCategory]);
+  useEffect(() => {
+    const fetchNews = () => {
+      fetch(`https://inshorts.deta.dev/news?category=${currentCategory}`)
+        .then(response => response.json())
+        .then(data => setNewsData(data))
+        .catch(error => console.error("Error fetching news:", error));
+    };
+    fetchNews();
+  }, [currentCategory]);
 
   const handleSearch = (event) => {
         event.preventDefault();
@@ -115,11 +115,13 @@ function App() {
         <>
           <img src='my-loader-image.svg' width="450px"/>
           <h2>Please wait while the webpage loads...</h2>
-          <Creator />
+          
        </>
       )
     }
+    
       </div>
+      <Creator />
     </div>
   );
 }

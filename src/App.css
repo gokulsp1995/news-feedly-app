@@ -127,10 +127,17 @@ body {
   margin: 8px;
 }
 
-
+.creator-main {
+  display: flex;
+  flex-direction: column;
+}
+.creator-main>h2 {
+  margin-left: 20px;
+}
 .creator-info{
   display: flex;
   justify-content: space-between;
+  margin-left: 10px;
 
 }
 .creator-each{
