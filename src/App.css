@@ -146,7 +146,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   border-radius: 10px;
   padding: 5px 15px;
 }
@@ -159,15 +159,29 @@ body {
 .creator-each > p {
   color: gray;
 }
+
 .creator-each > button {
-  background-color:#3B5998;
+  background-color:#2E9FF8;
   color: snow;
-  padding: 10px 10px;
+  
+  padding: 12px 10px;
   width: 160px;
-  font-weight: 700;
-  font-size: 16px;
-  border-radius: 10px;
+  font-weight: 100;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
   cursor: pointer;
+}
+.creator-top {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+}
+.creator-top>h2{
+  color: #022B50;
+}
+.creator-top>img {
+  margin:10px;
 }
 
 @media (max-width: 768px) {

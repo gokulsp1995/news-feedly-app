@@ -37,7 +37,10 @@ const Creator = () => {
       };
     return (
         <div className="creator-main">
-            <h2>Creators you should follow</h2>
+            <div className="creator-top">
+                <img src="https://res.cloudinary.com/dj0nbhjiy/image/upload/v1685727404/png-transparent-quill-paper-pens-fountain-pen-feather-feather-ink-animals-leaf-thumbnail-removebg-preview_kwrv5r.png" height="50px"/>
+                <h2>Creators you should follow</h2>
+            </div>
             <div className="creator-info">
                 {creatorData.map((person) => (
                     <div key={person.id} className="creator-each">

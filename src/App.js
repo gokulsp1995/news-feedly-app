@@ -115,11 +115,9 @@ function App() {
         <>
           <img src='my-loader-image.svg' width="450px"/>
           <h2>Please wait while the webpage loads...</h2>
-          
        </>
       )
     }
-    
       </div>
       <Creator />
     </div>
