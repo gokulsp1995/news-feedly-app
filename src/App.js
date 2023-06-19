@@ -27,15 +27,23 @@ function App() {
   // }, [currentCategory]); 
 
   useEffect(() => {
-    const fetchNews = () => {
-      fetch(`https://inshorts.deta.dev/news?category=${currentCategory}`)
-        .then(response => response.json())
-        .then(data => setNewsData(data))
-        .catch(error => console.error("Error fetching news:", error));
+    const fetchNews = async () => {
+      // fetch(`https://inshorts.deta.dev/news?category=${currentCategory}`)
+      const result = await fetch("https://inshorts.me/news/all?offset=0&limit=10");
+      const resultJson = await result.json();
+      console.log(resultJson);
+      setNewsData(resultJson);
+      
+        // .then(response => response.json())
+        // .then(response => console.log(response))
+        // .then(data => setNewsData(data))
+        // .then(data => console.log("data",data))
+        // .catch(error => console.error("Error fetching news:", error));
+        
     };
     fetchNews();
   }, [currentCategory]);
-
+  console.log(newsData)
   const handleSearch = (event) => {
         event.preventDefault();
         const searchTerm = event.target.search.value
@@ -84,7 +92,7 @@ function App() {
           ))}
       </div>
       <div className="news-container">
-        {searchNewsData && Array.isArray(searchNewsData) && searchNewsData.length > 0 ? (
+        {/* {searchNewsData && Array.isArray(searchNewsData) && searchNewsData.length > 0 ? (
           searchNewsData.map((news) =>(
             <NewsSquare 
               key={news.id}
@@ -97,21 +105,25 @@ function App() {
               readMoreUrl={news.readMoreUrl}
             />
           ))
-        ):
-      newsData.data && Array.isArray(newsData.data) && newsData.data.length > 0 ? (
-          newsData.data.map((news) =>(
+        ): */}
+       {newsData?.data?.articles && Array.isArray(newsData?.data?.articles) && newsData?.data?.articles.length > 0 ? (
+          
+          newsData.data.articles.map((news) =>(
             <NewsSquare 
-              key={news.id}
+              key={news.hashId}
               title={news.title}
+              subtitle={news.subtitle}
               imageUrl={news.imageUrl}
-              author={news.author} 
+              sourceName={news.sourceName} 
+              author={news.authorName} 
               content={news.content}
               date={news.date}
               time={news.time}
-              readMoreUrl={news.readMoreUrl}
+              readMoreUrl={news.sourceUrl}
             />
         ))
-      ) : (
+      ) :  
+      (
         <>
           <img src='my-loader-image.svg' width="450px"/>
           <h2>Please wait while the webpage loads...</h2>

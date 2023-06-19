@@ -1,1 +1,1 @@
-GET https://inshorts.deta.dev/news?category=science
+GET https://inshorts.me/news/all?offset=0&limit=10

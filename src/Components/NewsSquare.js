@@ -4,7 +4,8 @@ const NewsSquare = (props) => {
         <div className="news-card">
             <div className="news-and-image">
                 <div className="text-area">
-                    <h3 className="news-title">{props.title}</h3>  
+                    <h3 className="news-title">{props.title}</h3> 
+                    <p className="news-subtitle">{props.subtitle}</p> 
                     <div className="news-image">
                         <img src={props.imageUrl} alt={props.title} />
                     </div>
@@ -15,6 +16,7 @@ const NewsSquare = (props) => {
             <div className="news-bottom">
                 <div className="news-brand-time">
                     <p className="news-author">{props.author}</p>
+                    <p className="sourceName">{props.sourceName}</p>
                     <p className="date-and-time">{props.date}</p>
                     <p className="date-and-time">{props.time}</p>
                 </div>
