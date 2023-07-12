@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const helloWorld  = async() => {
+        try{
+            const result = await fetch("https://inshorts.me/news/mall?offset=0&limit=10");
+            if(result?.ok){
+                console.log(result)
+            }
+            else{
+                
+                throw new Error("No API available")
+            }
+        }
+        catch (error){
+            console.error("No API was fetched",error)
+        }
+    }
+    helloWorld();
+    </script>
+</body>
+</html>

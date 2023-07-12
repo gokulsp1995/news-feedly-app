@@ -2,38 +2,54 @@ body {
   background-color: snow;
 }
 .search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   text-align: center;
   margin-bottom: 20px;
 }
 
 .search-container input {
+  align-self: center;
   padding: 5px;
   width: 300px;
   height: 24px;
+}
+.search-container>h1 {
+  align-self: flex-start;
+  color:#4B92C8;
+}
+.header-stories{
+  color: #062D4B;
 }
 .top-section {
   display: flex;
   flex-wrap: wrap;
 }
 .top-section > button {
-  background-color: #2d2d2d;
-  color: snow;
+  background-color: snow;
+  color: #2d2d2d;
   font-size: 16px;
+  font-weight: 700;
   padding: 5px 15px;
+  border: none;
   border-radius: 10px;
   cursor: pointer;
-  margin: 5px;
+  margin: 2px;
+}
+.top-section>button:hover{
+  border: 0.2px solid #2d2d2d;
 }
 .categoryButtons:focus{
-  background-color: snow;
+  background-color: #4B92C8;
   color: #2d2d2d;
 }
 .search-container button {
   padding: 5px 10px;
-  margin-left: 10px;
+  margin-left: 5px;
   font-size: 16px;
   cursor: pointer;
-  /* border: none; */
+  border-radius: 5px;
   background-color: #2d2d2d;
   color: snow;
   font-weight: 700;
@@ -43,7 +59,6 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap:10px;
 }
-
 .news-card {
   border: 1px solid rgb(41, 34, 34);
   max-width: 650px;
@@ -59,7 +74,8 @@ body {
 .news-card:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: goldenrod;
+  /* color: goldenrod; */
+  /* border: 2px solid goldenrod; */
   /* font-size: 16px; */
 }
 .text-area{
@@ -78,6 +94,9 @@ body {
   margin: 10px 10px 0 10px;
   justify-content: center;
   align-items: center;
+}
+.news-and-image:hover{
+  border: 2px solid goldenrod;
 }
 .news-title {
   text-align: center;
@@ -184,6 +203,35 @@ body {
 }
 .creator-top>img {
   margin:10px;
+}
+
+.showMoreButton{
+  display: flex;
+  margin: 20px auto;
+  font-weight: 700;
+  font-size: 20px;
+  color:#607B8D;
+  background-color: snow;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  border : 1px solid #607B8D;
+}
+.showMoreButton:hover {
+  color: goldenrod;
+  transition: 0.4s;
+}
+.footer-terms{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 10px 20px 10px;
+  color: #607B8D;
+}
+.footer-terms > a {
+  text-decoration: none;
+  color:lightgray;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
