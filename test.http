@@ -1,1 +1,2 @@
-GET https://inshorts.me/news/all?offset=0&limit=10
+# GET https://inshorts.me/news/all?offset=0&limit=10
+GET http://api.weatherapi.com/v1/current.json?key=87939cc6b3bb41f4ba6172820231307&q=London&aqi=no

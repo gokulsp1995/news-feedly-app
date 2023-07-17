@@ -13,6 +13,8 @@ function App() {
   const [currentCategory, setCurrentCategory] = useState("all");
   const [visibleNewsCount, setVisibleNewsCount] = useState(4);
   const [showAllNews, setShowAllNews] = useState(false);
+  const [weatherData, setWeatherData] = useState({});
+
   // useEffect(() => {
   //   const fetchNews = async () => {
   //     try {
@@ -47,6 +49,24 @@ function App() {
     fetchNews();
   }, [currentCategory]);
 
+  useEffect(() => {
+    const fetchWeatherData = async () => {
+      try {
+        const apiUrl = `http://api.weatherapi.com/v1/current.json?key=87939cc6b3bb41f4ba6172820231307&q=London&aqi=no`;
+
+        const response = await fetch(apiUrl);
+        if (!response.ok) {
+          throw new Error('Failed to fetch weather data');
+        }
+        const data = await response.json();
+        setWeatherData(data);
+      } catch (error) {
+        console.error('Error fetching weather data:', error);
+      }
+    };
+    fetchWeatherData();
+  }, []);
+
   const handleSearch = (event) => {
         event.preventDefault();
         const searchTerm = event.target.search.value
@@ -61,13 +81,11 @@ function App() {
       setSearchNewsData(result);
       console.log("This is the search state",searchNewsData)
   }
-
   const handleCategoryChange = (category) => {
       // console.log("Category worked")
       console.log("category",category)
       setCurrentCategory(category);
   }
-
   const handleShowMoreButton = () => {
     console.log("Showing");
     // setVisibleNewsCount(newsData?.data?.articles.length)
@@ -155,6 +173,12 @@ function App() {
       <button onClick={handleShowMoreButton} className='showMoreButton'>{showAllNews ? "Show less news" : "Show more news"}</button>
       <Creator />
       <Footer />
+      <Weather
+        location={weatherData.location.name}
+        weather={weatherData.current.condition.text}
+        temperature={weatherData.current.temp_c}
+        icon={`http:${weatherData.current.condition.icon}`}
+      />
     </div>
   );
 }
