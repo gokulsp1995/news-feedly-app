@@ -105,8 +105,27 @@ function App() {
                           "Automobile"]
     return (
     <div className='App'> 
-      <Header handleSearch={handleSearch} />
+    <div className='header-and-weather'>
+        <Header handleSearch={handleSearch} />
+
+            {/* Conditional rendering for Weather component */}
+            {weatherData.location && weatherData.current ? (
+            <Weather
+              location={weatherData.location.name}
+              region={weatherData.location.region}
+              weather={weatherData.current.condition.text}
+              temperature={weatherData.current.temp_c}
+              icon={`http:${weatherData.current.condition.icon}`}
+              localtime={weatherData.location.localtime}
+            />
+        ) : (
+          <p>Loading weather data...</p>
+        )}
+      </div>
       <h3 className='header-stories'>Top stories for you</h3>
+
+      
+
       <div className="top-section">
         {categoryArray.map((category) => (
           <button className='categoryButtons' key={category} onClick={()=>handleCategoryChange(category.toLowerCase())}>
@@ -173,12 +192,8 @@ function App() {
       <button onClick={handleShowMoreButton} className='showMoreButton'>{showAllNews ? "Show less news" : "Show more news"}</button>
       <Creator />
       <Footer />
-      <Weather
-        location={weatherData.location.name}
-        weather={weatherData.current.condition.text}
-        temperature={weatherData.current.temp_c}
-        icon={`http:${weatherData.current.condition.icon}`}
-      />
+
+      
     </div>
   );
 }
