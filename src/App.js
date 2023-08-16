@@ -52,7 +52,7 @@ function App() {
   useEffect(() => {
     const fetchWeatherData = async () => {
       try {
-        const apiUrl = `http://api.weatherapi.com/v1/current.json?key=87939cc6b3bb41f4ba6172820231307&q=London&aqi=no`;
+        const apiUrl = `https://api.weatherapi.com/v1/current.json?key=87939cc6b3bb41f4ba6172820231307&q=London&aqi=no`;
 
         const response = await fetch(apiUrl);
         if (!response.ok) {
@@ -115,7 +115,7 @@ function App() {
               region={weatherData.location.region}
               weather={weatherData.current.condition.text}
               temperature={weatherData.current.temp_c}
-              icon={`http:${weatherData.current.condition.icon}`}
+              icon={`https:${weatherData.current.condition.icon}`}
               localtime={weatherData.location.localtime}
             />
         ) : (
