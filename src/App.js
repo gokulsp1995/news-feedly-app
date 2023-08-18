@@ -69,17 +69,24 @@ function App() {
 
   const handleSearch = (event) => {
         event.preventDefault();
-        const searchTerm = event.target.search.value
-      const result =[]
-      for( let i=0; i < newsData.data.length; i++) {
-          // console.log(newsData.data[i].title, newsData.data[i].title.includes(searchNewsData))
-          if (newsData.data[i].title.includes(searchTerm)){
-              result.push(newsData.data[i])
-          }
+        const searchTerm = event.target.search.value.toLowerCase(); // Convert search term to lowercase for case-insensitive search
+      // const result =[]
+      // for( let i=0; i < newsData.data.length; i++) {
+      //     console.log(newsData.data[i].title, newsData.data[i].title.includes(searchNewsData))
+      //     if (newsData.data[i].title.includes(searchTerm)){
+      //         result.push(newsData.data[i])
+      //     }
+      if(searchTerm.trim() === "") {
+        setSearchNewsData([]);
       }
-      console.log("Result after filter",result);
-      setSearchNewsData(result);
+      else {
+        const filteredNews = newsData?.data?.articles.filter((news) => {
+          news.title.toLowerCase().includes(searchTerm)
+        })
+        setSearchNewsData(filteredNews);
+      }
       console.log("This is the search state",searchNewsData)
+      console.log(event.target.search.value.toLowerCase())
   }
   const handleCategoryChange = (category) => {
       // console.log("Category worked")
@@ -190,7 +197,9 @@ function App() {
     }
       </div>
       <button onClick={handleShowMoreButton} className='showMoreButton'>{showAllNews ? "Show less news" : "Show more news"}</button>
-      <Creator />
+      <div className='creator-box'>
+        <Creator />
+      </div>
       <Footer />
 
     </div>

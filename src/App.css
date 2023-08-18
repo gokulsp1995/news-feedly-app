@@ -274,8 +274,9 @@ body {
   .news-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex: 1;
+    /* justify-content: center; */
+    /* align-items: center; */
     margin: auto;
   }
   .search-container {
@@ -294,8 +295,14 @@ body {
     /* margin: 1px solid black; */
   }
   .search-container > h1 {
+    display: flex;
+    flex-direction: row;
     margin: auto;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+  }
+  .news-card {
+    margin: 10px auto;
+
   }
   .weather-card{
     display: flex;
@@ -311,7 +318,7 @@ body {
   .creator-top > h2{
     font-size: 16px;
   }
-  .search-container>h1 {
+  .search-container > h1 {
     font-size: 80px;
     font-weight: 100;
   }
@@ -330,6 +337,11 @@ body {
   width: 80px;
   font-weight: 100;
   font-size: 16px;
+  }
+  .creator-box{
+    /* display: flex; 
+    justify-content: space-between; */
+    margin: auto;
   }
   .footer-terms>a{
     margin: 10px;
