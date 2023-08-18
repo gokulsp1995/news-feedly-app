@@ -264,6 +264,13 @@ body {
 }
 
 @media (max-width: 768px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .news-container {
     display: flex;
     flex-direction: column;
@@ -298,8 +305,33 @@ body {
     /* border: 1px solid black; */
     padding: 20px 30px;
   }
+  .categoryButtons{
+    display: none;
+  }
   .creator-top > h2{
     font-size: 16px;
   }
-  
+  .search-container>h1 {
+    font-size: 80px;
+    font-weight: 100;
+  }
+  .creator-each{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  .creator-each > img {
+    width: 90px;
+  }
+  .creator-each > button {
+    /* width: 150px; */
+    font-size: 10px;
+    padding: 10px 10px;
+  width: 80px;
+  font-weight: 100;
+  font-size: 16px;
+  }
+  .footer-terms>a{
+    margin: 10px;
+  }
 }

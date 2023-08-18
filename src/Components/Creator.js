@@ -7,19 +7,19 @@ const creatorData = [
      id:"1"
     },
     {
-     name: "Ron Teylor",
+     name: "Merin Teylor",
      company: "Tech Mint",
-     imageUrl: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+     imageUrl: "https://res.cloudinary.com/dj0nbhjiy/image/upload/v1692379037/Img1_phtdyj.jpg",
      id:"2"
     },
     {
-     name: "Harry Teylor",
+     name: "Harry George",
      company: "Tech Mint",
      imageUrl: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
      id:"3"
     },
     {
-     name: "Hermoine",
+     name: "David James",
      company: "Tech Mint",
      imageUrl: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
      id:"4"
@@ -47,7 +47,7 @@ const Creator = () => {
                         <img src={person.imageUrl} width="150px"/> 
                         <h3>{person.name}</h3>
                         <p>{person.company}</p>
-                        <button onClick={() => handleFollowClick(person.id)}>
+                        <button className="follow-button" onClick={() => handleFollowClick(person.id)}>
                             {followClicks[person.id] ? "Unfollow" : "Follow"}
                         </button>
                     </div>

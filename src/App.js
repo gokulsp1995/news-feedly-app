@@ -193,7 +193,6 @@ function App() {
       <Creator />
       <Footer />
 
-      
     </div>
   );
 }
