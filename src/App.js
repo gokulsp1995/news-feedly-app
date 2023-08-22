@@ -32,10 +32,15 @@ function App() {
   //   fetchNews();
   // }, [currentCategory]); 
 
+  // CORS issue : probable solution :- adding a header
   useEffect(() => {
     const fetchNews = async () => {
       // fetch(`https://inshorts.deta.dev/news?category=${currentCategory}`)
-      const result = await fetch("https://inshorts.me/news/all?offset=0&limit=10");
+      const result = await fetch("https://inshorts.me/news/all?offset=0&limit=10", {
+        headers: {
+          "Content-Type": "application/json"
+        }
+      });
       if(result.ok){
           const resultJson = await result.json();
           console.log(resultJson);
@@ -81,7 +86,7 @@ function App() {
       }
       else {
         const filteredNews = newsData?.data?.articles.filter((news) => {
-          news.title.toLowerCase().includes(searchTerm)
+          return news.title.toLowerCase().includes(searchTerm)
         })
         setSearchNewsData(filteredNews);
       }
