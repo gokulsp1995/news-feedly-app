@@ -3,16 +3,28 @@ body {
 }
 .search-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
   text-align: center;
   margin-bottom: 20px;
 }
+
 .header-and-weather{
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  /* margin: 1px solid black; */
+  justify-content: space-between;
+}
+.weather-para {
+  border: 10px solid #4B92C8;
+    border-radius: 15px;
+    background-color: #2d2d2d;
+    color: snow;
+}
+.main-heading{
+  font-size: 100px;
+  font-weight: 100;
 }
 .weather-card{
   display: flex;
@@ -29,16 +41,19 @@ body {
   width: 80px;
 }
 .temperature {
-  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
   font-size: 24px;
   font-weight: 900;
 }
 .search-container input {
-  align-self: center;
-  padding: 5px;
-  margin-left: 80px;
-  width: 300px;
-  height: 24px;
+  /* padding: 5px; */
+  /* /* margin-left: 80px; */
+  width: 50%;
+  /* height: 24px; */
+}
+.categoryButtons{
+  /* display: none; */
+  width: 20%;
+  /* border: 1px solid gray; */
 }
 .search-container>h1 {
   align-self: flex-start;
@@ -46,32 +61,59 @@ body {
 }
 .search-elements{
   display: flex;
-
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  /* border: 1px solid black; */
+}
+.search-elements>input {
+  padding: 10px ;
+  font-size: 18px;
+  width: 95%;
+  /* margin: auto; */
+  /* font-family: roboto; */
+}
+.search-elements>button {
+  width: 100%;
 }
 .header-stories{
   color: #062D4B;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .top-section {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-items:center;
+  margin: 10px;
+  /* margin: auto; */
 }
 .top-section > button {
-  background-color: snow;
-  color: #2d2d2d;
+  background-color: #2d2d2d;
+  color: snow;
   font-size: 16px;
   font-weight: 700;
   padding: 5px 15px;
-  border: none;
+  /* border: 1px solid rgb(185, 12, 12); */
   border-radius: 10px;
   cursor: pointer;
-  margin: 2px;
+  margin: 5px;
+  padding: 5px;
+  transition: 0.4s;
+  box-shadow: 2px 5px #4B92C8;
 }
 .top-section>button:hover{
-  border: 0.2px solid #2d2d2d;
+  border: 2px solid #4B92C8;
+  color: #4B92C8;
 }
 .categoryButtons:focus{
   background-color: #4B92C8;
-  color: #2d2d2d;
+  color: snow;
 }
 .search-container button {
   padding: 5px 10px;
@@ -174,7 +216,6 @@ body {
 .news-brand-time > p {
   margin: 8px;
 }
-
 .creator-main {
   display: flex;
   flex-direction: column;
@@ -262,7 +303,10 @@ body {
   color:lightgray;
   font-weight: 500;
 }
-
+.loader-header {
+  display: flex;
+  margin: auto;
+}
 @media (max-width: 768px) {
   .App {
     display: flex;
@@ -270,7 +314,17 @@ body {
     align-items: center;
     justify-content: center;
   }
-
+  .main-heading{
+  }
+  .search-container{
+  /* visibility: hidden; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* margin-bottom: 20px; */
+  }
   .news-container {
     display: flex;
     flex-direction: column;
@@ -279,14 +333,6 @@ body {
     /* align-items: center; */
     margin: auto;
   }
-  .search-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    /* margin-bottom: 20px; */
-  }
   .header-and-weather{
     display: flex;
     flex-direction: column;
@@ -294,15 +340,61 @@ body {
     justify-content: space-around;
     /* margin: 1px solid black; */
   }
+  .weather-para{
+    border: 10px solid #4B92C8;
+    border-radius: 15px;
+    background-color: #2d2d2d;
+    color: snow;
+  }
+  .header-stories{
+    color: #062D4B;
+    
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  .search-elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 20px;
+    /* border: 1px solid black; */
+  }
+  .search-elements>input {
+    padding: 5px ;
+    font-size: 18px;
+    width: 195%;
+    margin: auto;
+    /* font-family: roboto; */
+  }
+  .top-section > button {
+    background-color: #2d2d2d;
+    color: snow;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 15px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 2px;
+    padding: 5px;
+  }
+  .header-and-categories{
+    display: flex;
+  }
   .search-container > h1 {
     display: flex;
     flex-direction: row;
-    margin: auto;
+    margin: 50px auto;
     /* margin-bottom: 30px; */
   }
   .news-card {
     margin: 10px auto;
-
   }
   .weather-card{
     display: flex;
@@ -313,14 +405,26 @@ body {
     padding: 20px 30px;
   }
   .categoryButtons{
-    display: none;
+    /* display: none; */
+    width: 100%;
+    /* border: 1px solid gray; */
+  }
+  .top-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    /* margin: auto; */
   }
   .creator-top > h2{
     font-size: 16px;
   }
   .search-container > h1 {
-    font-size: 80px;
+    font-size: 100px;
     font-weight: 100;
+    margin: 10px;
   }
   .creator-each{
     display: flex;
@@ -334,9 +438,9 @@ body {
     /* width: 150px; */
     font-size: 10px;
     padding: 10px 10px;
-  width: 80px;
-  font-weight: 100;
-  font-size: 16px;
+    width: 80px;
+    font-weight: 100;
+    font-size: 16px;
   }
   .creator-box{
     /* display: flex; 
@@ -345,5 +449,8 @@ body {
   }
   .footer-terms>a{
     margin: 10px;
+  }
+  .header-weather-top{
+    display: flex;
   }
 }

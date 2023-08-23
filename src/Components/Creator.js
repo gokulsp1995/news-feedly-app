@@ -8,19 +8,19 @@ const creatorData = [
     },
     {
      name: "Merin Teylor",
-     company: "Tech Mint",
+     company: "Times Square",
      imageUrl: "https://res.cloudinary.com/dj0nbhjiy/image/upload/v1692379037/Img1_phtdyj.jpg",
      id:"2"
     },
     {
      name: "Harry George",
-     company: "Tech Mint",
+     company: "Indian Express",
      imageUrl: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
      id:"3"
     },
     {
      name: "David James",
-     company: "Tech Mint",
+     company: "Japan Times",
      imageUrl: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
      id:"4"
     }
