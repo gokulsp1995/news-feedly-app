@@ -118,6 +118,10 @@ body {
   background-color: #4B92C8;
   color: snow;
 }
+.categoryButtons:hover:focus{
+  background-color: #4B92C8;
+  color: snow;
+}
 .search-container button {
   padding: 5px 10px;
   margin-left: 5px;
