@@ -172,6 +172,7 @@ body {
 }
 .news-title {
   text-align: center;
+  margin: 10px
   /* color: ; */
 }
 .news-content {
